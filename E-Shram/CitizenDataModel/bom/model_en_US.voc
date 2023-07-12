@@ -1,0 +1,49 @@
+
+# cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType#concept.label = CitizenDataType
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.CitizenDataType(java.lang.Long,java.lang.String,java.lang.String,java.util.List,double,java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {CitizenDataType} where {0, age} {1, citizenship} {2, currentAddress} {3, EligiblePolicies} {4, monthlyIncome} {5, name} {6, permanentAddress} {7, workerType}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.addTo_eligiblePolicieses(java.lang.String)#phrase.action = add {0} to the EligiblePolicieses of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.age#phrase.action = set the age of {this} to {age}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.age#phrase.addition_setter = add {age} to the age of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.age#phrase.navigation = {age} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.age#phrase.subtraction_setter = subtract {age} from the age of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.citizenship#phrase.action = set the citizenship of {this} to {citizenship}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.citizenship#phrase.navigation = {citizenship} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.clear_eligiblePolicieses()#phrase.action = clear the EligiblePolicieses of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.currentAddress#phrase.action = set the currentAddress of {this} to {currentAddress}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.currentAddress#phrase.navigation = {currentAddress} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.eligiblePolicieses#phrase.action = set the EligiblePolicieses of {this} to {EligiblePolicies}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.eligiblePolicieses#phrase.navigation = {EligiblePolicies} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.monthlyIncome#phrase.action = set the monthlyIncome of {this} to {monthlyIncome}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.monthlyIncome#phrase.addition_setter = add {monthlyIncome} to the monthlyIncome of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.monthlyIncome#phrase.navigation = {monthlyIncome} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.monthlyIncome#phrase.subtraction_setter = subtract {monthlyIncome} from the monthlyIncome of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.name#phrase.action = set the name of {this} to {name}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.name#phrase.navigation = {name} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.permanentAddress#phrase.action = set the permanentAddress of {this} to {permanentAddress}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.permanentAddress#phrase.navigation = {permanentAddress} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.removeFrom_eligiblePolicieses(java.lang.String)#phrase.action = remove {0} from the EligiblePolicieses of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.workerType#phrase.action = set the workerType of {this} to {workerType}
+cp4admin.e_shram.e_shram.citizendatamodel.CitizenDataType.workerType#phrase.navigation = {workerType} of {this}
+
+# cp4admin.e_shram.e_shram.citizendatamodel.EligibilityType
+cp4admin.e_shram.e_shram.citizendatamodel.EligibilityType#concept.label = EligibilityType
+cp4admin.e_shram.e_shram.citizendatamodel.EligibilityType.EligibilityType(java.lang.String)#phrase.navigation = a new {EligibilityType} where {0, eligibility}
+cp4admin.e_shram.e_shram.citizendatamodel.EligibilityType.eligibility#phrase.action = set the eligibility of {this} to {eligibility}
+cp4admin.e_shram.e_shram.citizendatamodel.EligibilityType.eligibility#phrase.navigation = {eligibility} of {this}
+
+# cp4admin.e_shram.e_shram.citizendatamodel.PolicyType
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType#concept.label = PolicyType
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.PolicyType(java.lang.Long,java.lang.String,double,java.lang.String)#phrase.navigation = a new {PolicyType} where {0, age} {1, citizenShip} {2, monthlyIncome} {3, workerType}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.age#phrase.action = set the age of {this} to {age}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.age#phrase.addition_setter = add {age} to the age of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.age#phrase.navigation = {age} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.age#phrase.subtraction_setter = subtract {age} from the age of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.citizenShip#phrase.action = set the citizenShip of {this} to {citizenShip}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.citizenShip#phrase.navigation = {citizenShip} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.monthlyIncome#phrase.action = set the monthlyIncome of {this} to {monthlyIncome}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.monthlyIncome#phrase.addition_setter = add {monthlyIncome} to the monthlyIncome of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.monthlyIncome#phrase.navigation = {monthlyIncome} of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.monthlyIncome#phrase.subtraction_setter = subtract {monthlyIncome} from the monthlyIncome of {this}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.workerType#phrase.action = set the workerType of {this} to {workerType}
+cp4admin.e_shram.e_shram.citizendatamodel.PolicyType.workerType#phrase.navigation = {workerType} of {this}

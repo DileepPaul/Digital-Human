@@ -1,0 +1,1 @@
+{"operationId":"95abdfc5-9636-443c-ae1b-d0003e867527","body":"{\n  \"citizenData\": {\n    \"EligiblePolicieses\": [],\n    \"age\": 19,\n    \"citizenship\": \"Indian\",\n    \"currentAddress\": \"ssddsdsd\",\n    \"monthlyIncome\": 14000,\n    \"name\": \"\",\n    \"permanentAddress\": \"\",\n    \"workerType\": \"\"\n  }\n}"}

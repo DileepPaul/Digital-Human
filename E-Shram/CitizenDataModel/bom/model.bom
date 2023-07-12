@@ -1,0 +1,117 @@
+
+package cp4admin.e_shram.e_shram.citizendatamodel;
+
+
+public class CitizenDataType
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "CitizenDataType"
+        property "de.generated" "true"
+{
+    public java.lang.Long age
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "age"
+                property update "true";
+    public string citizenship
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "citizenship"
+                property update "true";
+    public string currentAddress
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "currentAddress"
+                property update "true";
+    public java.util.List eligiblePolicieses domain 0,* class string
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EligiblePolicieses"
+                property update "true";
+    public double monthlyIncome
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "monthlyIncome"
+                property update "true";
+    public string name
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "name"
+                property update "true";
+    public string permanentAddress
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "permanentAddress"
+                property update "true";
+    public string workerType
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "workerType"
+                property update "true";
+    public CitizenDataType(java.lang.Long age, 
+        string citizenship, 
+        string currentAddress, 
+        java.util.List eligiblePolicieses domain 0,* class string, 
+        double monthlyIncome, 
+        string name, 
+        string permanentAddress, 
+        string workerType)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public CitizenDataType()
+                property "dataio.default" "true";
+    public void addTo_eligiblePolicieses(string eligiblePolicieses)
+                property collectionAttribute "eligiblePolicieses"
+                property update "true";
+    public void clear_eligiblePolicieses()
+                property collectionAttribute "eligiblePolicieses"
+                property update "true";
+    public void removeFrom_eligiblePolicieses(string eligiblePolicieses)
+                property collectionAttribute "eligiblePolicieses"
+                property update "true";
+    public void set_eligiblePolicieses(java.util.Collection eligiblePolicieses domain 0,* class string)
+                property collectionAttribute "eligiblePolicieses"
+                property update "true";
+}
+
+public class EligibilityType
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "EligibilityType"
+        property "de.generated" "true"
+{
+    public string eligibility
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "eligibility"
+                property update "true";
+    public EligibilityType(string eligibility)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public EligibilityType()
+                property "dataio.default" "true";
+}
+
+public class PolicyType
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "PolicyType"
+        property "de.generated" "true"
+{
+    public java.lang.Long age
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "age"
+                property update "true";
+    public string citizenShip
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "citizenShip"
+                property update "true";
+    public double monthlyIncome
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "monthlyIncome"
+                property update "true";
+    public string workerType
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "workerType"
+                property update "true";
+    public PolicyType(java.lang.Long age, string citizenShip, double monthlyIncome, string workerType)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public PolicyType()
+                property "dataio.default" "true";
+}
+

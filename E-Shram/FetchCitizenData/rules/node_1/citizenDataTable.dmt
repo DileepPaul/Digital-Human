@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>citizenDataTable</name>
+  <uuid>a3e2c942-526e-40d0-92d9-8d631fdcfd5f</uuid>
+  <locale>en_US</locale>
+  <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+    <Body>
+        <Properties>
+            <Property Name="UI.MediaType"><![CDATA[Web]]></Property>
+            <Property Name="UI.RenderBoolean" Type="xs:boolean"><![CDATA[true]]></Property>
+        </Properties>
+        <Structure>
+            <ConditionDefinitions>
+                <ConditionDefinition Id="C0">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[uniqueId is <a string>]]></Text>
+                    </ExpressionDefinition>
+                </ConditionDefinition>
+            </ConditionDefinitions>
+            <ActionDefinitions>
+                <ActionDefinition Id="A0">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[set decision to a new CitizenDataType where
+	the age is <age> , 
+	the citizenship is <citizenship> , 
+	the currentAddress is <currentAddress> , 
+	the monthlyIncome is <monthlyIncome> , 
+	the name is <name> , 
+	the permanentAddress is <permanentAddress> , 
+	the workerType is <workerType>]]></Text>
+                    </ExpressionDefinition>
+                </ActionDefinition>
+            </ActionDefinitions>
+        </Structure>
+        <Contents>
+            <Partition DefId="C0">
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["397788000234"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[17]]></Param>
+                                <Param><![CDATA["Indian"]]></Param>
+                                <Param><![CDATA["16 Gr Flr, Ashok Shopping Centre, Mahatma Phule Rd, Mulund (east)  Mumbai, Maharashtra, 400081  02225623013"]]></Param>
+                                <Param><![CDATA[12000]]></Param>
+                                <Param><![CDATA[" Raman Sameera "]]></Param>
+                                <Param><![CDATA["16 Gr Flr, Ashok Shopping Centre, Mahatma Phule Rd, Mulund (east)  Mumbai, Maharashtra, 400081  02225623013"]]></Param>
+                                <Param><![CDATA["Farmer"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["334455773298"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[27]]></Param>
+                                <Param><![CDATA["Indian"]]></Param>
+                                <Param><![CDATA["301, Parijat, 60feet Road, Opp Parimal Bldg., Ghatkoper (east)  Mumbai, Maharashtra, 400077  02225136807"]]></Param>
+                                <Param><![CDATA[15000]]></Param>
+                                <Param><![CDATA[" Rajendra Kanta "]]></Param>
+                                <Param><![CDATA["301, Parijat, 60feet Road, Opp Parimal Bldg., Ghatkoper (east)  Mumbai, Maharashtra, 400077  02225136807"]]></Param>
+                                <Param><![CDATA["Carpenter"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["123554466780"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[37]]></Param>
+                                <Param><![CDATA["Indian"]]></Param>
+                                <Param><![CDATA["14, Geetha Hall Road, Nanjappa Road/race Cource  Coimbatore, Tamil Nadu, 641018  04222302245"]]></Param>
+                                <Param><![CDATA[18000]]></Param>
+                                <Param><![CDATA[" Rupinder Amita "]]></Param>
+                                <Param><![CDATA["14, Geetha Hall Road, Nanjappa Road/race Cource  Coimbatore, Tamil Nadu, 641018  04222302245"]]></Param>
+                                <Param><![CDATA["Fisherman"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["109866550011"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[47]]></Param>
+                                <Param><![CDATA["Indian"]]></Param>
+                                <Param><![CDATA["37, Chowringhee Road, Middleton Row  Kolkata, West Bengal, 700071  03322888948"]]></Param>
+                                <Param><![CDATA[21000]]></Param>
+                                <Param><![CDATA[" Roshni Rajesh "]]></Param>
+                                <Param><![CDATA["37, Chowringhee Road, Middleton Row  Kolkata, West Bengal, 700071  03322888948"]]></Param>
+                                <Param><![CDATA["Industry labour"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["378899008877"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[57]]></Param>
+                                <Param><![CDATA["Indian"]]></Param>
+                                <Param><![CDATA["1 St Floo, Hotel Oasis Bldg, 276 Shahid Bhagat Singh Rd, Fort  Mumbai, Maharashtra, 400001  02222692333"]]></Param>
+                                <Param><![CDATA[25000]]></Param>
+                                <Param><![CDATA[" Shakuntala Kanta "]]></Param>
+                                <Param><![CDATA["1 St Floo, Hotel Oasis Bldg, 276 Shahid Bhagat Singh Rd, Fort  Mumbai, Maharashtra, 400001  02222692333"]]></Param>
+                                <Param><![CDATA["Handloom Worker"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                                <Param/>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+            </Partition>
+        </Contents>
+    </Body>
+    <Resources DefaultLocale="en_US">
+        <ResourceSet Locale="en_US">
+            <Data Name="Definitions(A0)[4]#HeaderText"><![CDATA[monthlyIncome]]></Data>
+            <Data Name="Definitions(A0)[5]#HeaderText"><![CDATA[name]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[uniqueId]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[997]]></Data>
+            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[age]]></Data>
+            <Data Name="Definitions(A0)[1]#HeaderText"><![CDATA[citizenship]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[CitizenData]]></Data>
+            <Data Name="Definitions(A0)[6]#HeaderText"><![CDATA[permanentAddress]]></Data>
+            <Data Name="Definitions(A0)[2]#HeaderText"><![CDATA[currentAddress]]></Data>
+            <Data Name="Definitions(A0)[3]#HeaderText"><![CDATA[EligiblePolicies]]></Data>
+        </ResourceSet>
+    </Resources>
+</DT></definition>
+</ilog.rules.studio.model.dt:DecisionTable>
