@@ -4,4 +4,13 @@
   <uuid>120baa0a-4359-4f04-abb5-7742eee513e7</uuid>
   <decisionModel href="../rules/decisionModel.dmo#cf9375dd-106e-475a-a03e-2e8fb7224e62"/>
   <targetRuleProject href="../../FetchCitizenData#3b75d9f6-be69-4890-9597-f493f74358d3"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["FetchCitizenData"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
